@@ -9,8 +9,8 @@ import Store from "./store/store";
 
 function App() {
   return (
-    <div>
-      <Store/>
+
+      <Store>
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Index/>}/>
@@ -18,7 +18,8 @@ function App() {
         <Route path="/view/:bookId" element={<View/>}/>
       </Routes>
       </BrowserRouter>
-    </div>
+      </Store>
+
   );
 }
 
